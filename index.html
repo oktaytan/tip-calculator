@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">tip calculator</h1>
+    <form id="tipForm" class="tip__form">
+      <div id="feedback" class="">Your feedback</div>
+      <div class="form__group">
+        <label for="input-bill">How much was your bill</label>
+        <div class="input__wrap dolar">
+          <input type="number" id="input-bill" autocomplete="off" step="0.01">
+          <button class="inc"><i class="fas fa-caret-up"></i></button>
+          <button class="desc"><i class="fas fa-caret-down"></i></button>
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="input-users">How Many People Sharing The Bill</label>
+        <div class="input__wrap user">
+          <input type="number" id="input-users" autocomplete="off" step="1">
+          <button class="inc"><i class="fas fa-caret-up"></i></button>
+          <button class="desc"><i class="fas fa-caret-down"></i></button>
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="input-service">How was your service</label>
+        <div class="custom-select">
+          <select id="input-service">
+            <option selected value="0">Choose...</option>
+            <option value="1">Great - 20%</option>
+            <option value="2">Ok - 10%</option>
+            <option value="3">Bad - 2%</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" class="btn submitBtn" value="Calculate">
+    </form>
+    <div id="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <h3>Calculating...</h3>
+    </div>
+    <!-- result -->
+    <div id="results">
+      <h3 class="result__item">Tip amount :<span>$</span><span id="tip-amount">40</span></h3>
+      <h3 class="result__item">Total amount :<span>$</span><span id="total-amount">480</span></h3>
+      <h3 class="result__item">Each person owns :<span>$</span><span id="person-amount">120</span></h3>
+    </div>
+  </div>
+
+  <script src="./js/custom-select.js"></script>
+  <script src="./js/changeInputValue.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
