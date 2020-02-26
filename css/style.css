@@ -508,7 +508,7 @@ body {
   margin: 0;
   text-align: center;
   width: 100%;
-  margin-top: 1.125rem;
+  margin-top: 1.8rem;
   margin-bottom: 2.5rem;
 }
 
@@ -707,14 +707,14 @@ body {
   color: #41c167;
 }
 
-input[type="number"] {
+input[type='number'] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
@@ -898,4 +898,3 @@ input[type=number]::-webkit-outer-spin-button {
             transform: scale(0);
   }
 }
-/*# sourceMappingURL=style.css.map */
